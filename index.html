@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Sign Up Form</title>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Simonetta&display=swap">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<form action="index.html" method="post">
+			<h3>THE CODE REVIEW</h3>
+			<div class="tablet_div">
+				<div class="header_div">
+					<h2>Signup for our newsletter</h2>
+					<p>Get the latest news on how your code is doing right in your inbox</p>
+				</div>
+				<div class="contact_border">
+					<fieldset class="primary_fieldset">
+						<legend>Contact Information</legend>
+						<div class="flexbox">
+							<label for="full_name">Full Name</label>
+							<input class="focus" type="text" id="full_name" name="user_full_name" placeholder="required" required>
+					
+							<label for="email">Email Address</label>
+							<input class="focus" type="email" id="email" name="email_address" placeholder="required" required>
+				
+							<label for="phone_number">Phone Number</label>
+							<input class="focus" type="tel" id="phone_number" name="user_phone_number" placeholder="additional">
+				
+							<label for="street_address">Street Address</label>
+							<input class="focus" type="text" id="street_address" name="user_street_address" placeholder="additional">
+				
+							<label for="city">City</label>
+							<input class="focus" type="text" id="city" name="user_city" placeholder="additional">
+		
+							<label for="state">State</label>
+							<select class="focus" name="user_state" id="state">
+								<option value="">--Please choose the state--</option>
+								<optgroup label="A">
+									<option value="Alabama">Alabama</option>
+									<option value="Alaska">Alaska</option>
+									<option value="Arizona">Arizona</option>
+									<option value="Arkansas">Arkansas</option>
+								</optgroup>
+								<optgroup label="C">
+									<option value="California">California</option>
+									<option value="Colorado">Colorado</option>
+									<option value="Connecticut">Connecticut</option>
+								</optgroup>
+								<optgroup label="D">
+									<option value="Delaware">Delaware</option>
+								</optgroup>
+								<optgroup label="F">
+									<option value="Florida">Florida</option>
+								</optgroup>
+								<optgroup label="G">
+									<option value="Georgia">Georgia</option>
+								</optgroup>
+								<optgroup label="H">
+									<option value="Hawaii">Hawaii</option>
+								</optgroup>
+								<optgroup label="I">
+									<option value="Idaho">Idaho</option>
+									<option value="Illinois">Illinois</option>
+									<option value="Indiana">Indiana</option>
+									<option value="Iowa">Iowa</option>
+								</optgroup>
+								<optgroup label="K">
+									<option value="Kansas">Kansas</option>
+									<option value="Kentucky">Kentucky</option>
+								</optgroup>
+								<option value="Unspecified">Unspecified</option>
+							</select>
+						
+							<label for="zip_code">Zip Code</label>
+							<input class="focus" type="text" id="zip_code" name="zip_code" placeholder="additional">
+						</div>
+					</fieldset>
+				</div>
+
+				<div class="newsletter_border">
+					<fieldset class="secondary_fieldset">
+						<legend>Newsletter</legend>
+						<label class="special_label">Select the newsletters you would like to recieve</label>
+						<div>
+							<input type="checkbox" id="html_news" value="html_news" name="news_type">
+							<label class="light" for="html_news">HTML News</label>
+						</div>
+						<div>
+							<input type="checkbox" id="css_news" value="css_news" name="news_type">
+							<label class="light" for="css_news">CSS News</label>
+						</div>
+						<div>
+							<input type="checkbox" id="javascript_news" value="javascript_news" name="news_type">
+							<label class="light" for="javascript_news">JavasCript News</label>
+						</div>
+						<label class="special_label">Newsletter format</label>
+						<div>
+							<input type="radio" id="html" value="html" name="format_type">
+							<label for="html">HTML</label>
+						</div>
+						<div>
+							<input type="radio" id="plain_text" value="plain_text" name="format_type">
+							<label for="plain_text">Plain Text</label>
+						</div>
+						<div>
+							<label class="special_label" for="other_topics">Other topics you would like to hear about</label>
+							<textarea class="focus" id="other_topics" name="suggested_topics"></textarea>
+						</div>
+					</fieldset>
+					<button type="submit">Sign Up</button>
+					<p class="special_paragraph">Copyright The Code Review</p>
+				</div>
+			</div>
+		</form>
+	</body>
+</html>
