@@ -98,7 +98,7 @@ select {
 }
 
 textarea {
-	width: 100%;
+  width: 100%;
 }
 
 button {
@@ -175,24 +175,25 @@ input[type="checkbox"] {
 	.flexbox {
 	flex-direction: row;
 	align-items: center;
-}
+	}
 
 	input[type="text"],
 	input[type="email"],
 	input[type="tel"],
 	select {
 	  flex-basis: 65%;
-}
+	}
+
 	.flexbox label {
 		flex-basis: 35%;
 	}
 
 	input[id="zip_code"] {
 	flex-basis: 32.5%;
-}
+	}
 
 	.tablet_div {
 		width: 50%;
 		margin: 0 auto;
+	}
 }
-
